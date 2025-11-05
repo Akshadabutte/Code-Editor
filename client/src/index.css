@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+  
+  .sidebar {
+    @apply bg-white border-r border-gray-200 h-full;
+  }
+  
+  .editor-container {
+    @apply h-full flex flex-col;
+  }
+  
+  .monaco-editor {
+    @apply h-full;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Monaco Editor customizations */
+.monaco-editor .margin {
+  @apply bg-gray-50;
+}
+
+.monaco-editor .monaco-editor-background {
+  @apply bg-white;
+}
+
+/* Cursor decorations */
+.cursor-decoration {
+  @apply absolute pointer-events-none;
+}
+
+.cursor-decoration::before {
+  content: '';
+  @apply absolute w-0.5 h-5 bg-blue-500;
+}
+
+.cursor-decoration::after {
+  content: '';
+  @apply absolute w-2 h-2 bg-blue-500 rounded-full -top-1 -left-1;
+} 
