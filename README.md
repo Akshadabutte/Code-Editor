@@ -29,8 +29,8 @@ A full-stack web application enabling multiple users to write and edit code simu
 
 ## UI Preview
 
-![UI Preview 1](images/UI_Preview_1.png)
-![UI Preview 2](images/UI_Preview_2.png)
+![UI Preview 1](UI_Preview_1)
+![UI Preview 2](UI_Preview_2)
 
 
 ## 📦 Installation
