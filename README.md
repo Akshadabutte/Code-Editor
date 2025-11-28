@@ -27,6 +27,12 @@ A full-stack web application enabling multiple users to write and edit code simu
 - **Socket.IO Client** - Real-time communication
 - **Tailwind CSS** - Styling
 
+## UI Preview
+
+![UI Preview 1](images/UI_Preview_1.png)
+![UI Preview 2](images/UI_Preview_2.png)
+
+
 ## 📦 Installation
 
 1. **Clone the repository**
